@@ -17,12 +17,14 @@ This notebook builds a **diagnostic prediction model** using medical data provid
 
 ## 🗂 Dataset
 
-- 📁 `Diabetic Foot Tongue Image Database.xlsx`
-- 40+ clinical and biochemical features per patient
-- Ground truth label derived from "Hardness at the First Metatarsophalangeal Joint"
-- Binary classification: `0 = Normal`, `1 = Abnormal`
+- 📁 **Name**: Diabetic Foot Tongue Image Database  
+- 📎 **Source**: [Kaggle Dataset by Yuanchun Hong](https://www.kaggle.com/datasets/yuanchunhong/diabetic-foot-tongue-image-data)  
+- 📑 **Format**: Excel (.xlsx), with over 40 clinical and biochemical features per patient
+- 🎯 **Label Rule**:  
+  `Hardness at the First Metatarsophalangeal Joint ≥ 5 → Positive (1)`  
+  `< 5 → Negative (0)`
 
-> Note: Due to privacy constraints, raw images are not used. Only derived numerical features are modeled.
+> Note: Due to privacy constraints, raw images are not used. Only numerical and clinical indicators are modeled.
 
 ## ⚙️ Model Details
 
